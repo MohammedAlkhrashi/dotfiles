@@ -2,8 +2,13 @@
 shopt -s dotglob
 
 cd dotfiles
-for f in *; 
+for file in *; 
 do
-	cp $f ~//
+	if [[ $file == *.sh ]]; then
+		filename=${file::-3}
+		cat $file >> ~/"${filename}"
+	else
+		cp $f ~//
+	fi
 done
 cd ..
