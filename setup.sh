@@ -8,7 +8,7 @@ do
 		filename=${file::-3}
 		cat $file >> ~/"${filename}"
 	else
-		cp $f ~//
+		cp $file ~//
 	fi
 done
 cd ..
