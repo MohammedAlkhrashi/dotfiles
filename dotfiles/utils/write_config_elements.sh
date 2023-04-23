@@ -12,17 +12,17 @@ values=()
 value=""
 
 while IFS= read -r line || [[ -n "$line" ]]; do
-
+    
     if [[ "$line" == *#* ]]; then
         if [[ ! -z "$value" ]]; then
             values+=("$value")
             value=""
         fi
-
+        
     else
         value="$value$line"
     fi
-
+    
 done < "$1"
 
 if [[ ! -z "$value" ]]; then
