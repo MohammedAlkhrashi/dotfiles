@@ -1,17 +1,16 @@
-#! /bin/bash
-shopt -s dotglob
-chmod a+x dotfiles/utils/write_config_elements.sh
+#!/bin/bash
 
-cd dotfiles
-for file in *;
-do
-    if [ -f $file ]; then
-        if [[ $file == *.cfg ]]; then
-            filename=${file::-4}
-            ./utils/write_config_elements.sh $file $filename
-        else
-            cp $file ~//
-        fi
-    fi
+set -e
+
+DOTFOLDER=dotfiles
+
+cd $DOTFOLDER
+
+for filename in .*; do
+	if [[ "$filename" == "." || "$filename" == ".." ]]; then
+ 		echo "Skipping file: $filename"
+ 	else
+		rm ~/$filename
+ 		ln $filename ~/$filename
+ 	fi
 done
-cd ..
