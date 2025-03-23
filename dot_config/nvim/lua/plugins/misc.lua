@@ -41,4 +41,9 @@ return {
       require('colorizer').setup()
     end,
   },
+  {
+    -- AI Autocomplete: codeium
+    'Exafunction/codeium.vim',
+    event = 'BufEnter',
+  },
 }

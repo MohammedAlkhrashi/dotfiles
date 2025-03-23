@@ -11,9 +11,6 @@ local opts = { noremap = true, silent = true }
 -- save file
 vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
--- save file without auto-formatting
-vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
-
 -- quit file
 vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 
@@ -73,3 +70,13 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous dia
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+-- Save file without auto-formatting
+vim.keymap.set('n', '<leader>ff', function()
+  vim.lsp.buf.format { async = true }
+end, { desc = 'Format current buffer' })
+
+-- Go to previous/next location (default <C-o>/<C-i> in Neovim)
+vim.keymap.set('n', 'gb', '<C-o>', { desc = 'Jump back' })
+vim.keymap.set('n', 'gf', '<C-i>', { desc = 'Jump forward' })
+
