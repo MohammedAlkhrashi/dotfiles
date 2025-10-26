@@ -1,3 +1,5 @@
 alias vim='nvim'
 alias kittyconf='vim ~/.config/kitty/kitty.conf'
 alias cm="chezmoi"
+alias cursor="/opt/cursor/cursor.AppImage --no-sandbox"
+
