@@ -1,0 +1,7 @@
+[user]
+	name = MohammedAlkhrashi
+	email = 32398807+MohammedAlkhrashi@users.noreply.github.com
+[credential]
+	helper = store
+[core]
+        editor = vim

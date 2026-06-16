@@ -1,0 +1,167 @@
+{
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-d>": false,
+    "<C-b>": false,
+    "<C-w>": false,
+    "<C-1>": false,
+    "<C-2>": false,
+    "<C-3>": false
+  },
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.zoomLevel": 2,
+  "editor.minimap.enabled": false,
+  "haskell.manageHLS": "GHCup",
+
+  // Harpoon
+  "vim.leader": " ",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<leader>", "0"],
+      "commands": ["vscode-harpoon.gotoEditor0"],
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    // End Harpoon settings
+    {
+      "before": ["<leader>", "+"],
+      "commands": ["workbench.action.increaseViewSize"]
+    },
+    {
+      "before": ["<leader>", "-"], 
+      "commands": ["workbench.action.decreaseViewSize"]
+    },
+    // move to right window
+    {
+      "before": ["<leader>", "l"],  
+      "commands": ["workbench.action.navigateRight"]
+    },
+    // move to left window
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    // alternate way to move right
+    {
+      "before": ["<leader>", "right"],
+      "commands": ["workbench.action.navigateRight"]
+    },
+    // alternate way to move left  
+    {
+      "before": ["<leader>", "left"],
+      "commands": ["workbench.action.navigateLeft"]
+    },
+    {
+      "before": ["<leader>", "<S-p>"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["[", "["],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["]", "]"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["workbench.action.focusFirstEditorGroup"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["workbench.action.focusSecondEditorGroup"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["workbench.action.focusThirdEditorGroup"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["aichat.newfollowupaction"]
+    },
+    {
+      "before": ["<leader>", "5"],
+      "commands": ["workbench.panel.composerViewPane2.view.focus"]
+    },
+    {
+      "before": ["<leader>", "down"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["<leader>", "up"], 
+      "commands": ["workbench.action.navigateForward"]
+    }
+  ],
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  // "vim.normalModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<space>"],
+  //     "commands": ["whichkey.show"]
+  //   },
+  // ],
+  // "vim.visualModeKeyBindingsNonRecursive": [
+  //   {
+  //     "before": ["<space>"],
+  //     "commands": ["whichkey.show"]
+  //   }
+  // ],
+  // "whichkey.bindingOverrides": [
+  //   {
+  //     "keys": "g.s",
+  //     "name": "Go to line",
+  //     "type": "command",
+  //     "command": "workbench.action.gotoLine"
+  //   }
+  // ],
+  "editor.lineNumbers": "relative",
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "sqltools.connections": [
+  
+    
+
+  ],
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "workbench.colorTheme": "SynthWave '84",
+  "jupyter.askForKernelRestart": false,
+  "redhat.telemetry.enabled": false,
+  "editor.formatOnPaste": true,
+  "window.autoDetectColorScheme": false,
+  "files.autoSave": "afterDelay",
+}
